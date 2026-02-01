@@ -3,7 +3,7 @@ import tempfile
 import os
 import pathlib
 
-def build_drawing(id):
+def build_drawing(id, width=9.0):
 
     # Create build directory:
     with tempfile.TemporaryDirectory(prefix="build_", dir="./") as tmp:
@@ -33,7 +33,7 @@ def build_drawing(id):
         aux_file = build_path / f"{id}.tex"
         
         with aux_file.open("w", encoding="utf-8") as file:
-            file.write(f"\\documentclass{{FiftyOhm}}\\DARCimageOnly{{9cm}}{{{id}include}}")
+            file.write(f"\\documentclass{{FiftyOhm}}\\DARCimageOnly{{{width}cm}}{{{id}include}}")
 
         # Symlink photos, so LaTeX can access these assets to render into graphics.
         photos_path = pathlib.Path("../contents/photos")
@@ -57,5 +57,12 @@ print("Please type number of drawing:")
 
 id = int(input())
 
+print("Please type size of drawing (default 9):")
+
+if (width_str := input()) != "":
+    width = float(width_str)
+else:
+    width = 9.0
+
 print(f"Building picture {id}. This might take a while ... ") 
-build_drawing(id)
+build_drawing(id, width)
