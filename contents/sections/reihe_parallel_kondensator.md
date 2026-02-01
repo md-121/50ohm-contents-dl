@@ -30,7 +30,7 @@ Jetzt muss man nur noch alle Werte Addieren in $\unit{\nano\farad}$ addieren.
 [photo:262:a_Netzteil BEKO PA 7 x 10000µF parallel: Parallelschaltung von 7 x 10 000 µF in einem Endstufennetzteil] 
 </margin>
 
-Als Verständnistest kann die nächste Aufgabe verwendet werden. Hinweis:  Das Ergebnis muss sicher kleiner als 15 nF sein!
+Als Verständnistest kann die nächste Aufgabe verwendet werden.
 
 [question:ED118]
 
