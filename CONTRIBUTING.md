@@ -15,8 +15,6 @@ Suche zunächst nach ähnlichen Issues, bevor du ein neues erstellst. Vergewisse
 Errata und grundlegende Klarstellungen werden akzeptiert, sofern wir der Meinung sind, dass sie den Inhalt verbessern.
 Du kannst auch ein Issue eröffnen, damit wir besprechen können, wie oder ob das Problem behoben werden sollte.
 
-Falls du so etwas noch nie gemacht hast, könnte der [Flow-Leitfaden](https://docs.github.com/de/get-started/quickstart/github-flow) hilfreich sein.
-
 ## Größere Überarbeitungen
 
 Bitte eröffne vor umfangreicheren Änderungen zunächst ein Issue zur Diskussion.
@@ -35,6 +33,4 @@ Für das einfachere Bearbeiten der Inhalte stellen wir ein [VSCode-Plugin](https
 
 ## Zeichnungen
 
-Die Zeichnungen werden durch LaTeX und TikZ umgesetzt. Hierbei kommt insbesondere die Bibliothek [CircuiTikZ](https://ctan.org/pkg/circuitikz?lang=de) zum Einsatz. Ein direktes Modifizieren der SVG-Dateien ist für die deutschen Inhalte nicht vorgesehen!
-
-Das Python-Skript `src/build_drawings.py` wird verwendet, um ein neues Bild zu erstellen. Beim Aufrufen des Skripts muss eine Bildnummer eingegeben werden. Die Bildnummern müssen aufsteigend vergeben werden: Bitte hierzu vorher ein Issue öffnen. Außerdem ist es notwendig, dass das Programm *pdftocairo* installiert ist, um ein SVG zu generieren.
+Die Zeichnungen werden durch LaTeX und TikZ umgesetzt. Alle Informationen findet man dieser [README](src/README.md).
